@@ -41,7 +41,7 @@ function main() {
         // join defaultRoom
         socket.join('defaultRoom')
         // only emit to the default Room
-        io.to('defaultRoom').emit('details', 'You joined "default room"')
+        io.to('defaultRoom').emit('incoming message', 'You joined "default room"')
     });
 }
 
